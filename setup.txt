@@ -1,0 +1,13 @@
+Step-by-step setup/intalation procedure:
+
+Step 1: Download WinPython to your portable drive.
+Step 2: Install the dependencies for Python from requirements.txt in WinPython Command Prompt.exe
+Step 3: Install your Local GGUF inference: Use the upstream pre-built CPU wheel appropriate for your windows/python architecture when possible rather than forcing a source build. llama-cpp-python . Optional NVIDIA GPU utilization support: nvidia-ml-py
+Step 4: Model Setup:
+        Language model:
+        Download the chosen GGUF build of SmolLM2 360M Instruct and rename/use the file to: SmolLM2-360M-Instruct-Q4_K_M.gguf
+        Place it in models/SmolLM2-360M-Instruct-Q4_K_M.gguf
+        Vosk: Download the small English Vosk model: vosk-model-small-en-us-0.15
+        Extract it to models/vosk-model-small-en-us-0.15/
+        The Vosk model's am, conf, graph, ivector, and related directories should be directly inside vosk-model-small-en-us-0.15.
+Step 5: Run TADASHI.bat
